@@ -21,7 +21,7 @@ The total number of breaches rises sharply from an average of 4 to an average of
 
 The differences across sex and race/ethnicity are not very stark. The difference between the median number of breaches for men and women is 1 with women suffering from more breaches. For race/ethnicity, NH White have a higher median (7) than other racial groups (6).
 
-<img src = "figs/age_breaches.png" width = 350px>
+<img src = "figs/age_breaches.png" width = 500px>
 
 
 **Total Breaches by Self-Identified Gender**
