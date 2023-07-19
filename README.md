@@ -3,15 +3,15 @@
 We query [HIBP](https://haveibeenpwned.com/) with emails from the [Florida voter registration database](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/UBIG3F) to estimate how often people's data have been breached. We find that a voter's email in the voter registration database is part of 7.5 breaches on average. The median is 6. The percentage of people whose accounts have been breached is  99.8%. The average number of serious breaches, e.g., breaches where sensitive data like audio recordings, drug habits, photos, etc., associated with the email is 4.5 and the median is 4. Given that data from only a small sliver of breaches are public and given that these breaches are related to one email (people often have multiple addresses), the total number is likely much higher.
 
 
-|       |   total_breaches |   serious_breaches |   non_fab_breaches |   non_null_uniques |\n
-|:------|-----------------:|-------------------:|-------------------:|-------------------:|\n
-| count |     335971       |       335971       |       335971       |       335971       |\n
-| mean  |          7.54622 |            4.50826 |            7.5462  |            7.54622 |\n
-| std   |          5.84812 |            4.0904  |            5.84799 |            5.84812 |\n
-| min   |          0       |            0       |            0       |            0       |\n
-| 25%   |          3       |            2       |            3       |            3       |\n
-| 50%   |          6       |            4       |            6       |            6       |\n
-| 75%   |         11       |            6       |           11       |           11       |\n
+|       |   total_breaches |   serious_breaches |   non_fab_breaches |   non_null_uniques |
+|:------|-----------------:|-------------------:|-------------------:|-------------------:|
+| count |     335971       |       335971       |       335971       |       335971       |
+| mean  |          7.54622 |            4.50826 |            7.5462  |            7.54622 |
+| std   |          5.84812 |            4.0904  |            5.84799 |            5.84812 |
+| min   |          0       |            0       |            0       |            0       |
+| 25%   |          3       |            2       |            3       |            3       |
+| 50%   |          6       |            4       |            6       |            6       |
+| 75%   |         11       |            6       |           11       |           11       |
 | max   |        344       |          298       |          344       |          344       |
 
 
