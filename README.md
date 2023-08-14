@@ -54,6 +54,10 @@ The differences across sex and race/ethnicity are not very stark. The difference
 * [Get HIBP Data](notebooks/02_get_fl_hibp.ipynb)
 * [Analyze](notebooks/03_concat_fl_dat_analyze.ipynb)
 
+## HIBP Data
+
+https://doi.org/10.7910/DVN/NTN9EP
+
 ## Reference
 
 Please see also:
