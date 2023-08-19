@@ -1,25 +1,26 @@
-## Have I Been Pwned? Yes.
+### Have I Been Pwned? Yes. Evidence from Florida Voter Registration Data
 
-We query [HIBP](https://haveibeenpwned.com/) with emails from the [Florida voter registration database](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/UBIG3F) to estimate how often people's data have been breached. We find that a voter's email in the voter registration database is part of 7.5 breaches on average. The median is 6. The percentage of people whose accounts have been breached is  99.8%. The average number of serious breaches, e.g., breaches where sensitive data like audio recordings, drug habits, photos, etc., associated with the email is 4.5 and the median is 4. Given that data from only a small sliver of breaches are public and given that these breaches are related to one email (people often have multiple addresses), the total number is likely much higher.
+We query [HIBP](https://haveibeenpwned.com/) with emails from the [Florida voter registration database](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/UBIG3F) to estimate how often people's data has been breached. 83.9% of people have had their data breached at least once. The mean number of breaches per email is 6.2 and the median is 5. The average number of serious breaches, e.g., breaches where sensitive data like audio recordings, drug habits, photos, etc., associated with an email is 3.6; the median is 3. Given that data from only a small sliver of breaches are public and given that these breaches are related to one email (people often have multiple addresses), the total number is likely much higher.
 
 
 |       |   total_breaches |   serious_breaches |   non_fab_breaches |
 |:------|-----------------:|-------------------:|-------------------:|
-| count |     335971       |       335971       |       335971       |
-| mean  |          7.54622 |            4.50826 |            7.5462  |
-| std   |          5.84812 |            4.0904  |            5.84799 |
-| min   |          0       |            0       |            0       |
-| 25%   |          3       |            2       |            3       |
-| 50%   |          6       |            4       |            6       |
-| 75%   |         11       |            6       |           11       |
-| max   |        344       |          298       |          344       |
+| count |      1.34819e+06 |        1.34819e+06 |        1.34819e+06 |
+| mean  |      6.22427     |        3.65431     |        6.22425     |
+| std   |      5.865       |        3.90145     |        5.86484     |
+| min   |      0           |        0           |        0           |
+| 25%   |      1           |        1           |        1           |
+| 50%   |      5           |        3           |        5           |
+| 75%   |     10           |        6           |       10           |
+| max   |    390           |      333           |      389           |
+
 
 
 ### Digital Divide: Sociodemographic Predictors of Breaches
 
 The total number of breaches rises sharply from an average of 4 to an average of 7.5 between 20 and 50 years before tapering to around 6. This trend may reflect a combination of things: 1. total number of online accounts (which plausibly increases with age till you reach people who were too old to sign up for too many services), 2. digital savviness, which may be greatest among the youngest. ([Winsorizing](figs/age_winsorized_breaches.png) doesn't change the pattern much.)
 
-The differences across sex and race/ethnicity are not very stark. The difference between the median number of breaches for men and women is 1 with women suffering from more breaches. For race/ethnicity, NH White have a higher median (7) than other racial groups (6).
+The differences across sex and race/ethnicity are not very stark. The difference between the median number of breaches for men and women is 0 and the 7th percentile is 1. For race/ethnicity, NH White, NH Black, and 'Other' have a higher median (5) than other racial groups (4).
 
 <img src = "figs/age_breaches.png" width = 500px>
 
@@ -27,40 +28,39 @@ The differences across sex and race/ethnicity are not very stark. The difference
 **Total Breaches by Self-Identified Gender**
 
 
-|    | gender   |   count |   mean |   std |   min |   25 |   50 |   75 |   max |
-|---:|:---------|--------:|-------:|------:|------:|-----:|-----:|-----:|------:|
-|  1 | F        |  177919 |    7.7 |   5.7 |     0 |    3 |    7 |   11 |   344 |
-|  2 | M        |  153259 |    7.4 |   6   |     0 |    3 |    6 |   10 |   344 |
+| gender   |   count |   mean |   std |   min |   25 |   50 |   75 |   max |
+|:---------|--------:|-------:|------:|------:|-----:|-----:|-----:|------:|
+| F        |  721828 |    6.4 |   5.8 |     0 |    2 |    5 |   10 |   157 |
+| M        |  605040 |    6   |   5.9 |     0 |    1 |    5 |    9 |   390 |
 
 
 **Total Breaches by Self-Identified Race**
 
-|    | race        		|   count |   mean |   std |   min |   25 |   50 |   75 |   max |
-|---:|:-----------------|--------:|-------:|------:|------:|-----:|-----:|-----:|------:|
-|  0 | Asian            |    8069 |    7.2 |   5.8 |     0 |    3 |    6 |   10 |   154 |
-|  1 | Hispanic         |   65438 |    7.3 |   5.7 |     0 |    3 |    6 |   10 |   344 |
-|  2 | Multi-Racial     |    2623 |    7.2 |   5.4 |     0 |    3 |    6 |   10 |    53 |
-|  3 | NH Black         |   51089 |    7.2 |   5.9 |     0 |    3 |    6 |   10 |   344 |
-|  4 | NH White         |  193429 |    7.8 |   5.9 |     0 |    3 |    7 |   11 |   344 |
-|  5 | Native Americans |     876 |    7.3 |   5.5 |     0 |    3 |    6 |   10 |    42 |
-|  6 | Other            |    8706 |    7.5 |   5.6 |     0 |    3 |    6 |   11 |    55 |
-|  7 | Unknown          |    5741 |    6.7 |   5.9 |     0 |    3 |    5 |    9 |   195 |
+| race_lit         |   count |   mean |   std |   min |   25 |   50 |   75 |   max |
+|:-----------------|--------:|-------:|------:|------:|-----:|-----:|-----:|------:|
+| Asian            |   30518 |    5.9 |   5.8 |     0 |    1 |    4 |    9 |   154 |
+| Hispanic         |  317399 |    5.8 |   5.7 |     0 |    1 |    4 |    9 |   210 |
+| Multi-Racial     |   10046 |    5.7 |   5.8 |     0 |    1 |    4 |    9 |   145 |
+| NH Black         |  184947 |    5.8 |   5.7 |     0 |    1 |    5 |    9 |   265 |
+| NH White         |  750527 |    6.5 |   6   |     0 |    2 |    5 |   10 |   390 |
+| Native Americans |    3764 |    5.8 |   5.7 |     0 |    1 |    4 |    9 |    42 |
+| Other            |   27028 |    6.2 |   5.9 |     0 |    1 |    5 |    9 |   123 |
+| Unknown          |   23957 |    5.3 |   5.6 |     0 |    1 |    4 |    8 |   195 |
 
 
 ## Scripts
 
-* [Get Emails from Florida Voter DB](notebooks/01_fl_dat.ipynb)
-* [Valid Email Or Not](notebooks/01a_valid_email_or_not.ipynb)
-* [Get HIBP Data](notebooks/02_get_fl_hibp.ipynb)
-* [Analyze](notebooks/03_concat_fl_dat_analyze.ipynb)
+1. [Get Emails from Florida Voter DB](notebooks/01_fl_dat.ipynb)
+2. [Valid Email Or Not](notebooks/02_valid_email_or_not.ipynb)
+3. [Final Data](notebooks/03_create_final_left_table.ipynb)
+4. [Get HIBP Data](notebooks/04_get_hibp.ipynb)
+5. [Analysis](notebooks/05_concat_fl_dat_analyze.ipynb)
 
 ## HIBP Data
 
 https://doi.org/10.7910/DVN/NTN9EP
 
-## Reference
-
-Please see also:
+## References
 
 1. https://gsood.com/research/papers/pwned.pdf
 2. https://github.com/themains/bad_domains
