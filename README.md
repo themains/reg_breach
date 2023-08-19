@@ -18,7 +18,7 @@ We query [HIBP](https://haveibeenpwned.com/) with emails from the [Florida voter
 
 ### Digital Divide: Sociodemographic Predictors of Breaches
 
-The total number of breaches rises sharply from an average of 4 to an average of 7.5 between 20 and 50 years before tapering to around 6. This trend may reflect a combination of things: 1. total number of online accounts (which plausibly increases with age till you reach people who were too old to sign up for too many services), 2. digital savviness, which may be greatest among the youngest. ([Winsorizing](figs/age_winsorized_breaches.png) doesn't change the pattern much.)
+The median number of breaches rises sharply from 2.5 to over 6 between 18 and 45 years before steadily declining to 3. This trend may reflect a combination of things: 1. total number of online accounts (which plausibly increases with age till you reach people who were too old to sign up for too many services), 2. digital savviness, which may be greatest among the youngest. ([Winsorizing](figs/age_winsorized_breaches.png) doesn't change the pattern much.)
 
 The differences across sex and race/ethnicity are not very stark. The difference between the median number of breaches for men and women is 0 and the 7th percentile is 1. For race/ethnicity, NH White, NH Black, and 'Other' have a higher median (5) than other racial groups (4).
 
