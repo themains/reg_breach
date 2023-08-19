@@ -48,7 +48,7 @@ The differences across sex and race/ethnicity are not very stark. The difference
 | Unknown          |   23957 |    5.3 |   5.6 |     0 |    1 |    4 |    8 |   195 |
 
 
-## Scripts
+### Scripts
 
 1. [Get Emails from Florida Voter DB](notebooks/01_fl_dat.ipynb)
 2. [Valid Email Or Not](notebooks/02_valid_email_or_not.ipynb)
@@ -56,11 +56,11 @@ The differences across sex and race/ethnicity are not very stark. The difference
 4. [Get HIBP Data](notebooks/04_get_hibp.ipynb)
 5. [Analysis](notebooks/05_concat_fl_dat_analyze.ipynb)
 
-## HIBP Data
+### HIBP Data
 
 https://doi.org/10.7910/DVN/NTN9EP
 
-## References
+### References
 
 1. https://gsood.com/research/papers/pwned.pdf
 2. https://github.com/themains/bad_domains
