@@ -1,4 +1,4 @@
-### Have I Been Pwned? Yes. Evidence from Florida Voter Registration Data
+### I Have Been Pwned: Evidence from Florida Voter Registration Data
 
 We query [HIBP](https://haveibeenpwned.com/) with emails from the [Florida voter registration database](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/UBIG3F) to estimate how often people's data has been breached. 83.9% of people have had their data breached at least once. The mean number of breaches per email is 6.2, and the median is 5. The average number of serious breaches, e.g., breaches where sensitive data like audio recordings, drug habits, photos, etc., associated with an email, is 3.6; the median is 3. Given that data from only a small sliver of breaches are public and given that these breaches are related to one email (people often have multiple addresses), the total number is likely much higher.
 
