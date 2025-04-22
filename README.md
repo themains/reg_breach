@@ -66,3 +66,11 @@ https://doi.org/10.7910/DVN/NTN9EP
 2. https://github.com/themains/bad_domains
 
 
+
+## 🔗 Adjacent Repositories
+
+- [themains/pwned](https://github.com/themains/pwned) — How Often Are Americans' Accounts Breached?
+- [themains/pwned_pols](https://github.com/themains/pwned_pols) — A third of the politicians have had their data breached at least once. More alarmingly, over one in five have had their sensitive data, such as bank account numbers, biometric data, browsing history, chat logs, credit card CVV, etc., breached.
+- [themains/private_blacklight](https://github.com/themains/private_blacklight) — Privacy Online and Digital Divide on Online Privacy
+- [themains/bad_domains](https://github.com/themains/bad_domains) — Exposure to Malicious Websites
+- [themains/domain_knowledge](https://github.com/themains/domain_knowledge) — Domain Knowledge: Learning with pydomains
